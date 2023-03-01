@@ -67,6 +67,10 @@ i {
   font-size: 25px;
 }
 
+section {
+  height: auto;
+}
+
 footer {
   height: 100px;
   width: 100%;
@@ -214,16 +218,13 @@ body.dark .cambio::before{
   margin: 0;
 }
 
-section {
-  height: 100vh;
-}
-
 /* INICIO */
 .inicio-section {
   background-image: url(https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed   ;
+  background-attachment: fixed;
+  height: 100vh;
 }
 .inicio-contenido {
   background-color: var(--background-section-rgba);
@@ -251,6 +252,12 @@ section {
   font-size: 25px;  
 }
 
+.text-js{
+  margin: 0;
+  font-family: var(--fuente-primaria);
+  font-size: 30px;
+}
+
 .palabra-cambiante {
   font-family: 'Roboto Mono', monospace;
   background-color: var(--color-button);
@@ -262,17 +269,6 @@ section {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-}
-
-.palabra-cambiante:before {
-  content: '';
-  background-color: #4A4A4A;
-  width: 1px;
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  right: 7px;
-  animation: blinkNaim 500ms linear infinite;
 }
 
 .inicio-contenido p {
@@ -302,6 +298,7 @@ section {
   margin: 0;
   padding: 0 30px;
   background-color: var(--color-secundario);
+  height: 100vh;
 }
 
 .sobre-mi-section h2 {
@@ -498,7 +495,7 @@ section {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 135vh;
+  height: auto;
 }
 
 .contactame-info {
@@ -508,7 +505,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .contactame-info h2{
@@ -575,6 +571,8 @@ section {
   background-color: var(--background-contactame);
   border-radius: 20px;
   height: 90%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-right h3 {
@@ -628,4 +626,104 @@ section {
 
 .active {
   display: flex;
+}
+
+/*CSS PARA CELULARES*/
+@media (max-width: 468px){
+
+  body {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .aside-info {
+    display: none;
+    position: absolute;
+  }
+
+  .secciones {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .inicio-section {
+    width: 100%;
+  }
+
+  .inicio-section h3 {
+    display: block;
+    margin: 0;
+    height: auto;
+  }
+
+  .sobre-mi-section {
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .sobre-mi-section h2 {
+    font-size: 25px;
+    height: auto;
+  }
+
+  .info-sobre-mi {
+    display: block;
+    margin: 0;
+  }
+  .info-left {
+    width: 100%;
+  }
+
+  .estudios-section {
+    height: auto;
+    padding: 0 20px;
+  }
+  .estudios-section h2 {
+    font-size: 25px;
+    height: auto;
+  }
+  .cards-estudios {
+    display: block;
+  }
+  .card-estudio {
+    margin: 10px 0;
+  }
+
+  .habilidades-section {
+    height: auto;
+    padding: 0 20px;
+  }
+  .habilidades-section h2 {
+    font-size: 25px;
+    height: auto;
+  }
+  .barras-progresivas {
+    display: block;
+  }
+
+  .contactame-section{
+    height: auto;
+  }
+  .contactame-info{
+    height: auto;
+    padding: 0 20px;
+  }
+  .contactame-info h2 {
+    font-size: 25px;
+    height: auto;
+  }
+  .contactame-container{
+    display: block;
+  }
+  .contact-left {
+    width: 100%;
+  }
+  .redes-sociales div {
+    display: block;
+  }
+  .contact-right {
+    width: 100%;
+  }
 }

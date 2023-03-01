@@ -629,7 +629,105 @@ body.dark .cambio::before{
 }
 
 /*CSS PARA CELULARES*/
-@media (max-width: 468px){
+
+
+/*CSS PARA TABLETS*/
+@media (max-width: 768px){
+
+  body {
+    text-align: center;
+  }
+  .aside-info {
+    display: none;
+    position: absolute;
+  }
+
+  .secciones {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+
+  .inicio-section h3 {
+    display: block;
+    margin: 0;
+    height: auto;
+  }
+
+  .sobre-mi-section {
+    height: auto;
+    padding: 0 20px;
+  }
+
+  .sobre-mi-section h2 {
+    font-size: 25px;
+    height: auto;
+  }
+
+  .info-sobre-mi {
+    display: block;
+    margin: 0;
+  }
+  .info-left {
+    width: 100%;
+  }
+
+  .estudios-section {
+    height: auto;
+    padding: 0 20px;
+  }
+  .estudios-section h2 {
+    font-size: 25px;
+    height: auto;
+  }
+  .cards-estudios {
+    display: block;
+  }
+  .card-estudio {
+    margin: 10px 0;
+  }
+
+  .habilidades-section {
+    height: auto;
+    padding: 0 20px;
+  }
+  .habilidades-section h2 {
+    font-size: 25px;
+    height: auto;
+  }
+  .barras-progresivas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactame-section{
+    height: auto;
+  }
+  .contactame-info{
+    height: auto;
+    padding: 0 20px;
+  }
+  .contactame-info h2 {
+    font-size: 25px;
+    height: auto;
+  }
+  .contactame-container{
+    display: block;
+  }
+  .contact-left {
+    width: 100%;
+  }
+  .redes-sociales div {
+    display: block;
+  }
+  .contact-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px){
 
   body {
     display: block;

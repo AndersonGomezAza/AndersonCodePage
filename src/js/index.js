@@ -2,7 +2,8 @@
 const body = document.querySelector('body'),
 reloj = body.querySelector(".reloj"),
 modeSwitch = body.querySelector(".cambio-modo"),
-modeText = body.querySelector(".modo-texto");
+modeText = body.querySelector(".modo-texto"),
+btnDarkMode = body.querySelector("#dark-mode-desing");
 
 modeSwitch.addEventListener("click" , () =>{
   body.classList.toggle("dark");
@@ -12,6 +13,10 @@ modeSwitch.addEventListener("click" , () =>{
   }else{
     modeText.innerText = 'Modo Nocturno';
   }
+});
+
+btnDarkMode.addEventListener("click" , () =>{
+  body.classList.toggle("dark");
 });
 
 /* RELOJ */
@@ -70,6 +75,20 @@ arriba.addEventListener('click',()=>{
     top: 0,
     behavior: 'smooth'
   })
+})
+
+/* MOSTRAR MENU */
+const btnMenu = document.getElementById('open-menu');
+const asideMenu = document.getElementById('aside-info');
+
+btnMenu.addEventListener('click',()=> {
+  asideMenu.classList.toggle('open-menu-aside');
+})
+/* CERRAR MENU */
+const menuClose = document.getElementById('close-menu');
+
+menuClose.addEventListener('click',()=> {
+  asideMenu.classList.remove('open-menu-aside');
 })
 
 /* ALERTA CONTACTAME */
